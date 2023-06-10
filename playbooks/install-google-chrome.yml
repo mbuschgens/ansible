@@ -1,6 +1,6 @@
 ---
 - name: "Chocolatey"
-  hosts: winservers
+  hosts: veeam
   tasks:
     - name: Install Goolge Chrome
       win_chocolatey:
