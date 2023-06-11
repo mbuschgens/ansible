@@ -1,6 +1,6 @@
 ---
 - name: create vm demo
-  hosts: localhost
+  hosts: esxi-01
   become: false
   gather_facts: false
   collections:
