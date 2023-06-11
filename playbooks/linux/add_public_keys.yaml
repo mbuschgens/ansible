@@ -11,7 +11,7 @@
     ansible.posix.authorized_key:
       user: "{{ lookup('env','USER') }}"
       state: present
-      key: "{{ lookup('file', '~/.ssh/id_ed25519.pub') }}"
+      key: "{{ lookup('file', '/home/marco/.ssh/id_ed25519.pub') }}"
 
   # (Optional)
   # Set all sudoers to no password
