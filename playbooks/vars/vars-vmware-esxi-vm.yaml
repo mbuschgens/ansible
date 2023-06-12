@@ -18,7 +18,7 @@ vcenter_destination_folder: "myvm"
 vm_state: "poweredoff"
 vm_cdrom:
 vm_hw_iso: "iso"
-iso_path: "iso/rhel6.iso"
+vm_hw_scsi_iso_path: "iso/rhel6.iso"
 
 
 
