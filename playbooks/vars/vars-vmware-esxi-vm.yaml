@@ -18,7 +18,7 @@ vcenter_password: "Marcel7410!"
 #     private: no
 #remote_user: root
 
-#    parameters:
+    parameters:
       env_vars:
         - required: true
           options:
