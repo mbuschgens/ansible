@@ -6,7 +6,7 @@
   collections:
     - community.vmware
   pre_tasks:
-      - include_vars: vars-vmware-esxi-vm.yml
+      - include_vars: vars-vmware-esxi-vm.yaml
   tasks:
       - name: create folder
         vcenter_folder:

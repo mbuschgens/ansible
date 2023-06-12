@@ -1,5 +1,5 @@
 ---
-vcenter_hostname: "esxi-01.local.eissub.com"
+vcenter_hostname: "192.168.50.8"
 vcenter_datacenter: "vmwaredatacenter"
 vcenter_validate_certs: false
 vcenter_username: "root"
@@ -9,7 +9,7 @@ vm_guestid: "centos64Guest"
 vm_disk_gb: 10
 vm_disk_type: "thin"
 vm_disk_datastore: "HDD-Raid1"
-vm_hw_ram_mb: 1024
+vm_hw_ram_mb: 1024ß
 vm_hw_cpu_n: 1
 vm_hw_scsi: "paravirtual"
 vm_net_name: "VM Network"
