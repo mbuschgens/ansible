@@ -26,7 +26,7 @@
           validate_certs: "{{ vcenter_validate_certs }}"
           datacenter: "{{ vcenter_datacenter }}"
           name: "{{ vm_name }}"
-          folder: "{{ vcenter_destination_folder }}"
+#          folder: "{{ vcenter_destination_folder }}"
           state: "{{ vm_state }}"
           guest_id: "{{ vm_guestid }}"
 #          cluster: "{{ vcenter_cluster }}"
