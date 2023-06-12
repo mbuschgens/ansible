@@ -40,7 +40,7 @@ vm_hw_scsi: "paravirtual"
 vm_net_name: "VM_192.168.50.0/22"
 vm_net_type: "vmxnet3"
 vcenter_destination_folder: ""
-vm_state: "powered_on"
+vm_state: "powered-off"
 vm_cdrom:
 vm_hw_iso: "iso"
 vm_hw_scsi_iso_path: "[HDD-Raid1]ISO/ubuntu-22.04.1-live-server-amd64.iso"
