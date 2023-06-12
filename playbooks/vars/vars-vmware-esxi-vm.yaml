@@ -9,10 +9,16 @@ vm_guestid: "centos64Guest"
 vm_disk_gb: 10
 vm_disk_type: "thin"
 vm_disk_datastore: "HDD-Raid1"
-vm_hw_ram_mb: 1024ß
+vm_hw_ram_mb: 2048
 vm_hw_cpu_n: 1
 vm_hw_scsi: "paravirtual"
 vm_net_name: "VM Network"
 vm_net_type: "vmxnet3"
 vcenter_destination_folder: "myvm"
 vm_state: "poweredoff"
+vm_cdrom:
+vm_hw_iso: "iso"
+iso_path: "iso/rhel6.iso"
+
+
+
