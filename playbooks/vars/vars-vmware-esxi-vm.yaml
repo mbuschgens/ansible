@@ -26,7 +26,7 @@ vcenter_password: "Marcel7410!"
             - Production
           default_value: Stage
           description: Where to deploy?
-          name: vc_name
+          vm_name: ENVIRONMENT
 
 #vm_name: "Test-Ubuntu"
 vm_guestid: "ubuntu64Guest"
