@@ -4,7 +4,7 @@ vcenter_datacenter: "ha-datacenter"
 vcenter_validate_certs: false
 vcenter_username: "root"
 vcenter_password: "Marcel7410!"
-vars_prompt:
+#vars_prompt:
 #   - name: myuser
 #     prompt: Enter the UserName
 #     private: no
@@ -13,10 +13,20 @@ vars_prompt:
 #   - name: vc_name
 #     prompt: Enter the vCenter/ESXi HostName
 #     private: no
-   - name: vm_name
-     prompt: Enter the Guest VM Name
-     private: no
-remote_user: root
+#   - name: vm_name
+#     prompt: Enter the Guest VM Name
+#     private: no
+#remote_user: root
+
+    parameters:
+      env_vars:
+        - required: true
+          options:
+            - Stage
+            - Production
+          default_value: Stage
+          description: Where to deploy?
+          name: vc_name
 
 #vm_name: "Test-Ubuntu"
 vm_guestid: "ubuntu64Guest"
