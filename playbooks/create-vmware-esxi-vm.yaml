@@ -29,7 +29,7 @@
           folder: "{{ vcenter_destination_folder }}"
           state: "{{ vm_state }}"
           guest_id: "{{ vm_guestid }}"
-          guest: '{{vm_guest_name}}'
+#          guest: '{{vm_guest_name}}'
 #          cluster: "{{ vcenter_cluster }}"
           vm_extra_config:
             notes: This is a test VM created using Ansible
