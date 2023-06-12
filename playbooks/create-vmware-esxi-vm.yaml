@@ -14,7 +14,7 @@
           username: "{{ vcenter_username }}"
           password: "{{ vcenter_password }}"
           validate_certs: "{{ vcenter_validate_certs }}"
-#          datacenter_name: "{{ vcenter_datacenter }}"
+          datacenter_name: "{{ vcenter_datacenter }}"
           folder_name: "{{ vcenter_destination_folder }}"
           folder_type: vm
           state: present
