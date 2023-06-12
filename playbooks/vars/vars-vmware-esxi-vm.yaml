@@ -18,7 +18,7 @@ vcenter_destination_folder: ""
 vm_state: "poweredoff"
 vm_cdrom:
 vm_hw_iso: "iso"
-vm_hw_scsi_iso_path: "iso/rhel6.iso"
+vm_hw_scsi_iso_path: " ISO/ubuntu-22.04.1-live-server-amd64.iso"
 
 
 
