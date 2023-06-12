@@ -28,7 +28,7 @@ vcenter_password: "Marcel7410!"
           description: Where to deploy?
           vm_name: ENVIRONMENT
 
-#vm_name: "Test-Ubuntu"
+vm_name: "Test-Ubuntu"
 vm_guestid: "ubuntu64Guest"
 vm_guest_name: "ubuntu64Guest"
 vm_disk_gb: 10
