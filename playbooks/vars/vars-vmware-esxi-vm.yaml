@@ -4,8 +4,9 @@ vcenter_datacenter: "ha-datacenter"
 vcenter_validate_certs: false
 vcenter_username: "root"
 vcenter_password: "Marcel7410!"
-vm_name: "myvm"
-vm_guestid: "centos64Guest"
+vm_name: "Test-Ubuntu"
+vm_guestid: "ubuntu64Guest"
+vm_guest_name: "ubuntu64Guest"
 vm_disk_gb: 10
 vm_disk_type: "thin"
 vm_disk_datastore: "HDD-Raid1"
