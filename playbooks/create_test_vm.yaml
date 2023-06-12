@@ -1,0 +1,54 @@
+---
+- hosts: localhost
+  connection: local
+  gather_facts: no
+  vars_prompt:
+   - name: myuser
+     prompt: Enter the UserName
+     private: no
+   - name: mypass
+     prompt: Enter the Password
+   - name: vc_name
+     prompt: Enter the vCenter/ESXi HostName
+     private: no
+   - name: guest_name
+     prompt: Enter the Guest VM Name
+     private: no
+  remote_user: root
+
+  tasks:
+   - name: Create a VM
+     delegate_to: localhost
+     vsphere_guest:
+       vcenter_hostname: 192.168.50.8
+       esxi:
+         datacenter: ha-datacenter
+         hostname: '{{vc_name}}'
+       username: root
+       password: Marcel7410!
+       validate_certs: no
+       guest: '{{guest_name}}'
+       state: powered_on
+       vm_extra_config:
+         vcpu.hotadd: yes
+         mem.hotadd:  yes
+         notes: This is a test VM created using Ansible
+
+       vm_disk:
+         disk1:
+           size_gb: 100
+           type: thin
+           datastore: HDD-Raid1
+       vm_nic:
+         nic1:
+           type: vmxnet3
+           network: VM Network
+           network_type: standard
+       vm_hardware:
+         memory_mb: 2048
+         num_cpus: 2
+         osid: rhel6_64Guest
+         scsi: paravirtual
+         vm_cdrom:
+           type: "iso"
+           iso_path: "iso/rhel6.iso"
