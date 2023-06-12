@@ -1,6 +1,6 @@
 ---
 vcenter_hostname: "192.168.50.8"
-vcenter_datacenter: "ha-datacenter"
+vcenter_datacenter: ""
 vcenter_validate_certs: false
 vcenter_username: "root"
 vcenter_password: "Marcel7410!"
