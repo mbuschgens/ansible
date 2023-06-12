@@ -31,7 +31,7 @@
           guest_id: "{{ vm_guestid }}"
 #          guest: '{{vm_guest_name}}'
 #          cluster: "{{ vcenter_cluster }}"
-          advanced_settings:
+#         advanced_settings:
             notes: This is a test VM created using Ansible
           disk:
             - size_gb: "{{ vm_disk_gb }}"
