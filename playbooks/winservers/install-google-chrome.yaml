@@ -1,8 +1,8 @@
 ---
-- name: "Chocolatey"
+- name: "Google Chrome installation on WINDOWS"
   hosts: winservers
   tasks:
-    - name: Install Goolge Chrome
+    - name: Install Google Chrome
       win_chocolatey:
         name: googlechrome
         state: present
