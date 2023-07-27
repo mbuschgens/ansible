@@ -2,8 +2,8 @@
 - name: Install powertoys
   hosts: winservers
   tasks:
-  win_chocolatey:
     - name: powertoys
-      version: '0.71.0'
-      state: present
-      ignore_checksums: yes
+      win_chocolatey:
+        version: '0.71.0'
+        state: present
+        ignore_checksums: yes
