@@ -1,0 +1,9 @@
+---
+ - name: Ntop installation on WINDOWS
+   hosts: winserverscloud
+   gather_facts: false
+   tasks:
+     - name: Install Ntop with Chocolatey module
+       win_chocolatey:
+        name: ntop.portable
+        state: latest
